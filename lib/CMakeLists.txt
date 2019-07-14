@@ -9,7 +9,7 @@ cmake_minimum_required(VERSION 3.14)
 
 project( MyLibs
          VERSION 1.0.0
-	 DESCRIPTION "Reactor, Connector and Acceptor Implementations" )
+	 DESCRIPTION "Reactor Implementation" )
 
 add_library( reactor STATIC )
 target_sources( reactor
