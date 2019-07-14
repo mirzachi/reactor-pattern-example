@@ -1,6 +1,6 @@
 ###############################################################################
 #    Model Element   : CMakeLists
-#    Component       : Reactor, Connector, Acceptor patterns 
+#    Component       : Reactor
 #    Author          : Mirza Avdic 
 #    File Name       : CMakeLists.txt
 ###############################################################################
