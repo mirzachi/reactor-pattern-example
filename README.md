@@ -3,7 +3,7 @@ An implementation of a reactor pattern with the accompanying IPC server/client e
 
 ## PROBLEM
 
-On UNIX based systems the *accept()* system call is used to accept a new connection on a listening socket. If no pending connections are present on the queue, and the socket is not marked as nonblocking, accept() blocks the caller until a connection is present. If the socket is marked nonblocking and no pending connections are present on the queue, accept() fails and returns some pre-defined errors. 
+On UNIX based systems the *accept()* system call is used to accept a new connection on a listening socket. If no pending connections are present in the queue, and the socket is not marked as nonblocking, accept() blocks the caller until a connection is present. If the socket is marked nonblocking and no pending connections are present in the queue, accept() fails and returns some pre-defined errors. 
 
 ## REACTOR APPROACH
 
