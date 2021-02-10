@@ -14,3 +14,8 @@ In order to circumvent blocking and avoid using polling, a reactor pattern can b
 This example comes with the full implementation of the reactor pattern in C++. It is runnable only on systems that come with a *select()* system call, which allows a program to monitor multiple file descriptors, waiting until one or more of the file descriptors become "ready" for some class of I/O operation. In this particular example, the IPCServer registers a read handler within the reactor on a UNIX domain socket (socket file). The same socket file is used by the IPCClient to establish an inter-process communication with the IPCServer. Whenever the IPCClient sends some data using this socket file, *select()* will mark this file descriptor as "ready" to read, and the reactor will dispatch this information to the appropriate registered handler (*handle_read* by IPCServer). In this way, the IPCServer can do something else and switch to processing of incoming connections only when it is informed by the reactor that they are present in the waiting queue. Hence, *accept()* will never  block.
 
 The provided example is very basic and serves only for understanding the underlying mechanisms of a reactor pattern.
+
+<a href="https://scan.coverity.com/projects/reactor">
+  <img alt="Coverity Scan Build Status"
+       src="https://scan.coverity.com/projects/22593/badge.svg"/>
+</a>
