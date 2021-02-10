@@ -1,5 +1,12 @@
 # reactor-pattern-example
+
 An implementation of a reactor pattern with the accompanying IPC server/client example use case.
+
+<a href="https://scan.coverity.com/projects/reactor">
+  <img alt="Coverity Scan Build Status"
+       src="https://scan.coverity.com/projects/22593/badge.svg"/>
+</a>
+
 
 ## PROBLEM
 
@@ -15,7 +22,3 @@ This example comes with the full implementation of the reactor pattern in C++. I
 
 The provided example is very basic and serves only for understanding the underlying mechanisms of a reactor pattern.
 
-<a href="https://scan.coverity.com/projects/reactor">
-  <img alt="Coverity Scan Build Status"
-       src="https://scan.coverity.com/projects/22593/badge.svg"/>
-</a>
